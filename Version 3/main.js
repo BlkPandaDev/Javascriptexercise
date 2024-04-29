@@ -51,6 +51,9 @@ function restartGame() {
     document.getElementById("human-score").textContent = humanScore;
     document.getElementById("computer-score").textContent = computerScore;
     document.getElementById("round-winner").textContent = "";
+    
+    // Clear Computer's Choice content
+    document.getElementById("computer-choice").textContent = "";
 
     // Hide restart button
     document.getElementById("restart-btn").style.display = "none";
@@ -60,6 +63,7 @@ function restartGame() {
         button.disabled = false;
     });
 }
+
 
 // Global variables for scores
 let humanScore = 0;
