@@ -1,0 +1,108 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column; /* Arrange items vertically */
+}
+
+h1 {
+    margin-bottom: 20px; /* Add some space between the title and the game */
+    color:#1a06d3;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#game {
+    text-align: center;
+    /* Set the width and height of the game board */
+    width: 500px;
+    height: 500px;
+    border: 10px solid #1a06d3;
+    border-radius: 10px;
+    /* Set the background color of the game board */
+    background-color: #f0f0f0;
+}
+
+.choice-btn {
+    font-size: 54px;
+    padding: 10px;
+    margin: 5px;
+    background-color: #1a06d3;
+    border: 2px solid #0ae427;
+    border-radius: 5px;
+    cursor: pointer;
+    /* Set the color of the text inside the button */
+    color: #FFFFFF;
+}
+
+.choice-btn:hover {
+    background-color: #f0f0f0;
+    /* Set the color of the text inside the button when the mouse is hovering over it */
+    color: #1a06d3;
+}
+
+#restart-btn {
+    font-size: 16px;
+    padding: 8px 20px;
+    margin-top: 20px;
+    background-color: #3882F6;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 auto; /* Set left and right margin to auto */
+    display: block; /* Ensure it takes up the full width available */
+    /* Set the color of the text inside the button */
+    color: #FFFFFF;
+}
+
+#restart-btn:hover {
+    background-color: #1E63D3;
+    /* Set the color of the text inside the button when the mouse is hovering over it */
+    color: #FFFFFF;    
+}
+
+#computer-choice,
+#round-winner,
+#scores {
+    font-family: 'Comic Sans MS', cursive; /* Use a playful font */
+    font-size: 24px;
+    margin-bottom: 20px; /* Add space between elements */
+    color: #ff6f61; /* Fun, vibrant color */
+}
+
+#scores span {
+    font-weight: bold; /* Make scores stand out */
+}
+
+#restart-btn {
+    /* Existing styles */
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #2ecc71; /* Green color for positive action */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+
+    /* New styles for more fun appearance */
+    margin-top: 30px; /* Add space between scores and button */
+    font-family: 'Arial Black', sans-serif; /* Bold font */
+}
+
+#restart-btn:hover {
+    background-color: #27ae60; /* Darker shade of green on hover */
+}
+
+/* Fun animations */
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+#restart-btn:hover {
+    animation: bounce 0.5s infinite; /* Apply bounce animation on hover */
+}
